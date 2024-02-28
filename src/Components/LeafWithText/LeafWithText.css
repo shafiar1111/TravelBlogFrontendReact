@@ -1,0 +1,25 @@
+.leafwithtext
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100px;
+    width: 100%;
+    margin-top:100px;
+}
+.leafwithtext .leftleaf
+{
+    margin-right:20px;
+    transform: rotateZ(-90deg);
+}
+.leafwithtext .rightleaf
+{
+    margin-left:20px;
+    transform: rotateZ(90deg);
+}
+.leafwithtext h3
+{
+    color: #323232;
+    font-weight:500;
+    font-size:30px;
+}
