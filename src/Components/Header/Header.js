@@ -1,6 +1,8 @@
 import frontscreen from '../../Assets/front.jpg';
 import './Header.css';
 import logo from '../../Assets/logo.png';
+import { Link } from 'react-router-dom';
+
 function Header()
 {
     return (
@@ -20,15 +22,9 @@ function Header()
                 <h3>Spain</h3>
                 <h3>Bloggin</h3>
                 <h3>Photography</h3>
-                <h3>Register</h3>
+                <h3><Link to="/register">Register</Link></h3>
             </nav>
         </div>
-        <h1 className='wallheading'>Hi, I' m Shafi</h1>
-        <h2 className='wallsubheading'>A normal boy living her biggest, messiest dreams.</h2>
-        <button className='gettoknow'>
-            Excited to Know Me
-        </button>
-      
         </div>
     );
 }

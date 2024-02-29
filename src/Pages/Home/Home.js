@@ -15,6 +15,12 @@ function Home()
     return (
         <div>
             <Header/>
+                <h1 className='wallheading'>Hi, I' m Shafi</h1>
+            <h2 className='wallsubheading'>A normal boy living her biggest, messiest dreams.</h2>
+            <button className='gettoknow'>
+                Excited to Know Me
+            </button>
+            
             <LeafWithText text="My recent adventures"/>
             <ThreeImageGallery image1={img1} image2={img2} image3={img3} /> 
             <LeafWithText text="My favorite stories"/>

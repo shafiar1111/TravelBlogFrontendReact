@@ -11,11 +11,10 @@ root.render(
   <React.StrictMode>
     <Router>
       <Routes>
-         <Route path='/' Component={App}/>
-         <Route path='/Register' Component={Register}/>
+         <Route path='/' element={<App/>}/>
+         <Route path='/Register' element={<Register/>}/>
          </Routes>
     </Router>
-    <App />
   </React.StrictMode>
 );
 
