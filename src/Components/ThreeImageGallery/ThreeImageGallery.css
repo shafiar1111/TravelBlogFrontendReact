@@ -1,0 +1,32 @@
+
+.recentimagehome
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.recentimagehome .imagecontainer
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:350px;
+    height:350px;
+}
+.recentimagehome .overlay
+{
+    position: absolute;
+    width:300px;
+    height: 280px;
+    background-color: rgb(127, 255, 212); /* Transparent background */
+    transition:background-color  1s ease-in;
+    opacity:0;
+}
+.recentimagehome .imagecontainer:hover .overlay{
+    opacity:0.5;
+  }
+  .recentimagehome .imagecontainer:hover
+  {
+    border: 10px solid rgb(127, 255, 212) ;
+  }
