@@ -8,6 +8,7 @@ import './Home.css';
 import React from 'react';
 import LeafWithText from '../Components/LeafWithText/LeafWithText.js';
 import ThreeImageGallery from '../Components/ThreeImageGallery/ThreeImageGallery.js';
+import Footer from '../Components/Footer/Footer.js';
 
 function Home()
 {
@@ -15,9 +16,10 @@ function Home()
         <div>
             <Header/>
             <LeafWithText text="My recent adventures"/>
-            <ThreeImageGallery image1={img1} image2={img2} image3={img3} /> \
+            <ThreeImageGallery image1={img1} image2={img2} image3={img3} /> 
             <LeafWithText text="My favorite stories"/>
             <ThreeImageGallery image1={img1} image2={img2} image3={img3} /> 
+            <Footer/>
         </div>
     );
 }
