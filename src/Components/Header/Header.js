@@ -22,7 +22,7 @@ function Header()
                 <h3>Spain</h3>
                 <h3>Bloggin</h3>
                 <h3>Photography</h3>
-                <h3><Link to="/register">Register</Link></h3>
+                <h3><Link to="/register" className='register'>Register</Link></h3>
             </nav>
         </div>
         </div>

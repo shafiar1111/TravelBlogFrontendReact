@@ -81,3 +81,13 @@ p
 {
     margin-top:100px;
 }
+.register:active
+{
+color:white;
+text-decoration: none;
+}
+.register
+{
+    color:white;
+    text-decoration: none;
+}

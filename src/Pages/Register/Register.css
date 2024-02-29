@@ -1,0 +1,45 @@
+.wallheading
+{
+    font-size:45px;
+}
+.registerformcontainer
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:auto;
+    flex-direction: column;
+}
+.registerformcontainer .registerform
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:300px;
+    height:auto;
+    margin-top:20px;
+    border: 2px solid white;
+    flex-direction: column;
+    padding: 10px;
+}
+.registerform .option
+{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:20px;
+}
+.option label
+{
+    color: white;
+}
+.option button
+{
+    width:100px;
+    color: black;
+    padding:10px;
+    font-weight: 700;
+    font-family: cursive;
+}
