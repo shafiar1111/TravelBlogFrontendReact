@@ -10,7 +10,7 @@ function Header()
         <img src={frontscreen} alt='front' height='100%' width='100%' className='img'/>
         <div className='navigation'>
             <nav>
-                <h3>Home</h3>
+                <h3><Link to="/" className='register'>Home</Link></h3>
                 <h3>Meet Me</h3>
                 <h3>The blog</h3>
                 <h3>Destinations</h3>
@@ -21,7 +21,7 @@ function Header()
                 <h3>New Zealand</h3>
                 <h3>Spain</h3>
                 <h3>Bloggin</h3>
-                <h3>Photography</h3>
+                <h3><Link to="/login" className='register'>Login</Link></h3>
                 <h3><Link to="/register" className='register'>Register</Link></h3>
             </nav>
         </div>
