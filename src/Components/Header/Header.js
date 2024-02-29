@@ -20,7 +20,7 @@ function Header()
                 <h3>Spain</h3>
                 <h3>Bloggin</h3>
                 <h3>Photography</h3>
-                <h3>Moving Abroad</h3>
+                <h3>Register</h3>
             </nav>
         </div>
         <h1 className='wallheading'>Hi, I' m Shafi</h1>

@@ -1,14 +1,14 @@
-import Header from '../Components/Header/Header.js';
-import img1 from '../Assets/1.png';
-import img2 from '../Assets/2.png';
-import img3 from '../Assets/3.png';
+import Header from '../../Components/Header/Header.js';
+import img1 from '../../Assets/1.png';
+import img2 from '../../Assets/2.png';
+import img3 from '../../Assets/3.png';
 
 import './Home.css';
 
 import React from 'react';
-import LeafWithText from '../Components/LeafWithText/LeafWithText.js';
-import ThreeImageGallery from '../Components/ThreeImageGallery/ThreeImageGallery.js';
-import Footer from '../Components/Footer/Footer.js';
+import LeafWithText from '../../Components/LeafWithText/LeafWithText.js';
+import ThreeImageGallery from '../../Components/ThreeImageGallery/ThreeImageGallery.js';
+import Footer from '../../Components/Footer/Footer.js';
 
 function Home()
 {
