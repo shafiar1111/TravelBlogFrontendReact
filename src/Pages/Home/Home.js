@@ -20,13 +20,14 @@ function Home()
             <button className='gettoknow'>
                 Excited to Know Me
             </button>
-            
-            <LeafWithText text="My recent adventures"/>
-            <ThreeImageGallery image1={img1} image2={img2} image3={img3} /> 
-            <LeafWithText text="My favorite stories"/>
-            <ThreeImageGallery image1={img1} image2={img2} image3={img3} /> 
-            <LeafWithText text="My Travel Countries stories"/>
-            <ThreeImageGallery image1={img1} image2={img2} image3={img3} /> 
+            <div className='LeafContainer'>
+                <LeafWithText text="My recent adventures"/>
+                <ThreeImageGallery image1={img1} image2={img2} image3={img3} /> 
+                <LeafWithText text="My favorite stories"/>
+                <ThreeImageGallery image1={img1} image2={img2} image3={img3} /> 
+                <LeafWithText text="My Travel Countries stories"/>
+                <ThreeImageGallery image1={img1} image2={img2} image3={img3} /> 
+            </div>
             <Footer/>
         </div>
     );
