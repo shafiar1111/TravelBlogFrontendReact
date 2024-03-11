@@ -1,18 +1,14 @@
 .FooterContainer
 {
-    width:100%;
-    height: auto;
-    
-}
-.FooterContainer
-{
     position: relative;
     display:flex;
     justify-content: center;
     align-items: center;
     color:white;
     width: 100%;
-    height: auto;
+    height: 700px;
+    overflow: hidden;
+    margin-top:300px;
 }
 .FooterContainer .FooterNavContainer
 {
@@ -40,3 +36,13 @@
     width:25%;
     text-decoration: underline;
 }
+.FooterContainer img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    bottom:0;
+    left: 0;
+}
+
+

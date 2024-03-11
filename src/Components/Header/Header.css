@@ -91,3 +91,22 @@ text-decoration: none;
     color:white;
     text-decoration: none;
 }
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .menu-toggle:checked + .menu-icon {
+        display: block;
+    }
+
+    .menu-toggle:checked ~ .side-menu {
+        left: 0;
+    }
+
+    .side-menu {
+        width: 200px;
+    }
+
+    .side-menu h3 {
+        margin: 10px 10px;
+    }
+}
