@@ -5,16 +5,24 @@ import img3 from '../../Assets/3.png';
 
 import './Home.css';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import LeafWithText from '../../Components/LeafWithText/LeafWithText.js';
 import ThreeImageGallery from '../../Components/ThreeImageGallery/ThreeImageGallery.js';
 import Footer from '../../Components/Footer/Footer.js';
+import { useLocation } from 'react-router';
 
 function Home()
 {
+    const [state,setState]=useState('');
+    const location=useLocation();
+
+    useEffect(() => {
+        setState(location.state === null ? 'Register' : location.state.data);
+    }, [location.state]);
+
     return (
         <div>
-            <Header/>
+            <Header registerButton={state}/>
                 <h1 className='wallheading'>Hi, I' m Shafi</h1>
             <h2 className='wallsubheading'>A normal boy living her biggest, messiest dreams.</h2>
             <button className='gettoknow'>
