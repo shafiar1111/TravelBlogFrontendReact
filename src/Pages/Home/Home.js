@@ -17,7 +17,8 @@ function Home()
     const location=useLocation();
 
     useEffect(() => {
-        setState(location.state === null ? 'Register' : location.state.data);
+        setState(localStorage.getItem('cookie') === null ? 'Register' : 'Logout');
+        console.log("location.state.data",location.state)
     }, [location.state]);
 
     return (
@@ -30,11 +31,11 @@ function Home()
             </button>
             <div className='LeafContainer'>
                 <LeafWithText text="My recent adventures"/>
-                <ThreeImageGallery image1={img1} image2={img2} image3={img3} /> 
+                <ThreeImageGallery image1={img1} image2={img2} image3={img3} link1={"/Tour1"} link2={"/Tour2"} link3={"/Tour3"}/> 
                 <LeafWithText text="My favorite stories"/>
-                <ThreeImageGallery image1={img1} image2={img2} image3={img3} /> 
+                <ThreeImageGallery image1={img1} image2={img2} image3={img3} link1="/Tour1" link2="/Tour2" link3="/Tour3"/> 
                 <LeafWithText text="My Travel Countries stories"/>
-                <ThreeImageGallery image1={img1} image2={img2} image3={img3} /> 
+                <ThreeImageGallery image1={img1} image2={img2} image3={img3} link1="/Tour1" link2="/Tour2" link3="/Tour3"/> 
             </div>
             <Footer/>
         </div>

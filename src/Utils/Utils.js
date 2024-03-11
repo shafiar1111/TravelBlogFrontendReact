@@ -8,17 +8,20 @@ function cookieReceive()
    .then(data=>{
       if(data.cookiePresent)
       {
-        console.log("present",data.cookie);
+        localStorage.setItem("cookie",data.cookie);
         return data.cookie;
       }
       else
       {
+        localStorage.setItem("cookie","");
+
         return null;
       }
    })
    .catch(err=>{console.log(err);
+    localStorage.setItem("cookie","");
     return null;
-   });
+});
 
 }
 
@@ -37,7 +40,7 @@ function cookieRemove()
       }
    })
    .catch(err=>{console.log(err);
-    return false;
+    return null;
    });
 
 }
