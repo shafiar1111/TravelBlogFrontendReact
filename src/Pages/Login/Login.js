@@ -61,7 +61,7 @@ function Login()
                 setLogout("Register");
          })
          .catch(err=>{console.log("Not recieved",err); setLogout("Register");});
-    }
+     }
 
     return <div>
        <Header registerButton={checkLogout}/>
