@@ -1,0 +1,36 @@
+.PostPageContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom:-300px;
+}
+.PostPage
+{
+    margin-top: 650px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    width:auto;
+}
+.PostPage input,label,button
+{
+    margin-top: 20px;
+    margin-left:20px;
+    margin-right:20px;
+}
+.PostPage input
+{
+    width:200px;
+    height:50px;
+    text-indent:5px;
+}
+.PostPage button
+{
+        width:100px;
+        height:40px;
+        background-color: none;
+}

@@ -1,4 +1,6 @@
-const remote="http://localhost:3001";
+import axios from "axios";
+
+const remote="http://localhost:2500";
 
 
 function cookieReceive()
@@ -42,6 +44,21 @@ function cookieRemove()
    .catch(err=>{console.log(err);
     return null;
    });
-
 }
-export {remote,cookieReceive,cookieRemove};
+async function FetchImage()
+{
+  try
+  {
+    const response=await axios.get(`${remote}/image/getImages`,{headers:{'Content-Type':'application/json'},withCredentials:true})
+    if(response.data)
+    {
+     return response.data;
+    }
+  }
+  catch(err)
+  {
+    throw err;
+  }
+ 
+}
+export {remote,cookieReceive,cookieRemove,FetchImage};

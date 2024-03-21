@@ -5,7 +5,7 @@ import axios from 'axios';
 import {  useNavigate } from 'react-router';
 import Cookie from 'js-cookie';
 import { cookieReceive } from '../../Utils/Utils.js';
-
+import {remote} from '../../Utils/Utils.js';
 function Login()
 {
     const [email,SetEmail] =useState('');
@@ -36,17 +36,19 @@ function Login()
             "email":email,
             "password":password
         };
-        axios.post("http://localhost:3001/login",loginData,{headers:'Content-Type="application/json"',withCredentials:true})
+        axios.post(`${remote}/login`,{email:email,password:password},{headers:{'Content-Type':'application/json'},withCredentials:true})
         .then(res=>
          {
           if(res.data.err)
           {
             setError(res.data.err);
+            localStorage.setItem("login","false")
             return;
           }
           else
           {
              alert(res.data.msg);
+            localStorage.setItem("login","true")
              navigate('/',{state:{data:"Logout"}});
           }
          })
@@ -61,7 +63,7 @@ function Login()
                 setLogout("Register");
          })
          .catch(err=>{console.log("Not recieved",err); setLogout("Register");});
-     }
+    }
 
     return <div>
        <Header registerButton={checkLogout}/>

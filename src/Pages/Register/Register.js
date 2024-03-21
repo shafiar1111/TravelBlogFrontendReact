@@ -2,6 +2,7 @@ import './Register.css';
 import Header from '../../Components/Header/Header.js';
 import { useState,useEffect } from 'react';
 import axios from 'axios';
+import { remote } from '../../Utils/Utils.js';
 
 function Register()
 {
@@ -47,7 +48,7 @@ function Register()
             "email":email,
             "password":password
         };
-        axios.post("http://localhost:3001/register",registerData,{headers:{'Content-Type':'application/json'},withCredentials:true})
+        axios.post(`${remote}/register`,registerData,{headers:{'Content-Type':'application/json'},withCredentials:true})
         .then(res=>{
          if(res.data.err){
            setError(res.data.err)

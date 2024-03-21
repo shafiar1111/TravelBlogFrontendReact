@@ -8,6 +8,8 @@
     width: 100%;
     height: 700px;
     overflow: hidden;
+    bottom:0;
+    left:0;
     margin-top:300px;
 }
 .FooterContainer .FooterNavContainer
@@ -43,6 +45,17 @@
     position: absolute;
     bottom:0;
     left: 0;
+}
+@media screen and (max-width: 768px) {
+ .FooterNavContainer
+ {
+    display: flex;
+    margin-bottom:-350px;
+ }   
+ .FooterNavContainer h4
+ {
+    font-size: 10px;
+ }
 }
 
 

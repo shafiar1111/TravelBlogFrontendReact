@@ -109,4 +109,15 @@ text-decoration: none;
     .side-menu h3 {
         margin: 10px 10px;
     }
+    .navigation
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height:300px;
+    }
+    .navigation nav h3
+    {
+        font-size:12px;
+    }
 }

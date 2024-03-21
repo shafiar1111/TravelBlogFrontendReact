@@ -3,36 +3,45 @@ import './Header.css';
 import logo from '../../Assets/logo.png';
 import { Link, useLocation } from 'react-router-dom';
 import { cookieRemove } from '../../Utils/Utils';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
-function Header({registerButton="Register"})
+function Header()
 {
-    const location=useLocation();
-    const[state,setState]=useState(false);
+    const [registerButton,setRegisterButton]=useState('');
+
+    useEffect(()=>{
+        if(localStorage.getItem("login")==="true")
+        {
+            setRegisterButton("Logout")
+        }
+        else
+        {
+            setRegisterButton("Register")
+        }
+        console.log(localStorage.getItem("login"),registerButton);
+    },[registerButton]);
 
     const logOut=()=>{
+        if(registerButton==="Register")
+        {
+            return;
+        }
         cookieRemove().then(data=>{
             if(data)
             {
-                location.state=null;
-                registerButton="Register"
-            }
-            else
-            {
-                registerButton="Logout"
-
+                localStorage.setItem("login","false")
+                setRegisterButton("Register")
             }
         })
     }
-
     return (
         <div className='headercontainer'>
         <img src={frontscreen} alt='front' height='100%' width='100%' className='img'/>
         <div className='navigation'>
             <nav>
                 <h3><Link to="/" className='register'>Home</Link></h3>
-                <h3>Meet Me</h3>
-                <h3>The blog</h3>
+                <h3 onClick={()=>window.location.href="/MeetMe"}>Meet Me</h3>
+                {registerButton=="Register"?"":<h3 onClick={()=>window.location.href="/PostPage"}>Post Blog</h3>}
                 <h3>Destinations</h3>
                 <h3>Moving Abroad</h3>
             </nav>
@@ -41,7 +50,7 @@ function Header({registerButton="Register"})
                 <h3>New Zealand</h3>
                 <h3>Spain</h3>
                 <h3>Bloggin</h3>
-                <h3 onClick={()=>{if(registerButton==='Logout'){logOut()}}}>
+                <h3 onClick={()=>{logOut()}}>
                     <Link to="/register" className='register'>{registerButton}
                     </Link></h3>
             </nav>
