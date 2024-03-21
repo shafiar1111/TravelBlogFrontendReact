@@ -22,7 +22,6 @@ function Home()
 
 
      useEffect(()=>{
-        console.log(image);
         FetchImage()
         .then(res=>{
             setImage(res);

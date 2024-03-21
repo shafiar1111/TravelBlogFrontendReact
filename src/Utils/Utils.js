@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const remote="http://localhost:2500";
+const remote="https://travelblogbackendnodejs.onrender.com";
 
 
 function cookieReceive()
