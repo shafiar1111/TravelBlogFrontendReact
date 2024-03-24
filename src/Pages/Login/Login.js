@@ -6,6 +6,9 @@ import {  useNavigate } from 'react-router';
 import Cookie from 'js-cookie';
 import { cookieReceive } from '../../Utils/Utils.js';
 import {remote} from '../../Utils/Utils.js';
+import destination from '../../Assets/destination.jpg';
+import Footer from '../../Components/Footer/Footer.js';
+
 function Login()
 {
     const [email,SetEmail] =useState('');
@@ -66,7 +69,7 @@ function Login()
     }
 
     return <div>
-       <Header registerButton={checkLogout}/>
+       <Header registerButton={checkLogout} background={destination}/>
          <div className='registerformcontainer'>
            <h1 className='wallheading'>Login First !</h1>
            <div className='registerform'>
@@ -83,6 +86,7 @@ function Login()
              </div>
            </div>
          </div>
+         <Footer/>
         </div>
 }
 

@@ -4,6 +4,7 @@ import { useState,useEffect } from 'react';
 import axios from 'axios';
 import { remote } from '../../Utils/Utils.js';
 import frontscreen from '../../Assets/front.jpg';
+import Footer from '../../Components/Footer/Footer.js';
 
 function Register()
 {
@@ -90,6 +91,7 @@ function Register()
              </div>
            </div>
          </div>
+         <Footer/>
         </div>
 }
 
