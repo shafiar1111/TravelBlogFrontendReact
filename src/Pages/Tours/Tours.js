@@ -1,13 +1,14 @@
 import Footer from '../../Components/Footer/Footer.js';
 import Header from '../../Components/Header/Header.js';
 import './Tours.css';
-import React
- from 'react';
+import React from 'react';
+import frontscreen from '../../Assets/front.jpg';
+
 function Tours({img1,img2})
 {
    return (
    <div className='TourContainer'>
-     <Header/>
+     <Header background={frontscreen}/>
        <div className='TourSubContainer'>
         <h4>
             I never thought I’d say this, but I found a bird I hate. 

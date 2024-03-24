@@ -10,6 +10,8 @@ import img1 from './Assets/tour1-1.jpg';
 import img2 from './Assets/tour1-2.jpg';
 import MeetMe from './Pages/MeetMe/MeetMe.js';
 import PostPage from './Pages/PostPage/PostPage.js';
+import Destination from './Pages/Destination/Destination.js';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
@@ -23,6 +25,7 @@ root.render(
          <Route path='/Tour2' element={<Tours img1={img1} img2={img2}/>}/>
          <Route path='/Tour3' element={<Tours img1={img1} img2={img2}/>}/>
          <Route path='/MeetMe' element={<MeetMe/>}/>
+         <Route path='/Destination' element={<Destination/>}/>
          <Route path='/PostPage' element={<PostPage/>}/>
          </Routes>
     </Router>

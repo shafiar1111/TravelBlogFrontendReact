@@ -4,6 +4,7 @@ import Header from '../../Components/Header/Header';
 import './PostPage.css';
 import { remote } from '../../Utils/Utils';
 import axios from 'axios';
+import frontscreen from '../../Assets/front.jpg';
 
 function PostPage()
 {
@@ -37,7 +38,7 @@ function PostPage()
 
     return(
         <div >
-             <Header/>
+             <Header background={frontscreen}/>
              <div className="PostPageContainer">
              <div className='PostPage'>
                 <label>Upload Image</label>

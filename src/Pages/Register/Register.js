@@ -3,6 +3,7 @@ import Header from '../../Components/Header/Header.js';
 import { useState,useEffect } from 'react';
 import axios from 'axios';
 import { remote } from '../../Utils/Utils.js';
+import frontscreen from '../../Assets/front.jpg';
 
 function Register()
 {
@@ -62,7 +63,7 @@ function Register()
     }
 
     return <div>
-       <Header/>
+       <Header background={frontscreen}/>
          <div className='registerformcontainer'>
            <h1 className='wallheading'>Register Yourself !</h1>
            <div className='registerform'>

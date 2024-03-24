@@ -3,33 +3,35 @@ import Header from '../../Components/Header/Header';
 import './MeetMe.css';
 import meet from '../../Assets/meetme.avif'
 import meet2 from '../../Assets/meetme2.jpg'
+import frontscreen from '../../Assets/front.jpg';
 
 function MeetMe()
 {
     return (
         <div className="MeetMeContainer">
-             <Header/>
+             <Header background={frontscreen}/>
              <div className='MeetMeSub'>
                 <h3>Meet Me</h3>
                 <div className='MeetText'>
                     <h4>
-                    Hello! You’ve found me, and I’m so glad you’re here; it’s meant to be!
-
-So I’m Liz Carlson and welcome to my blog, Young Adventuress; a no-filter, vaguely chronological space filled with stories and misadventures about my travels over the years with some musings about life thrown in for good measure.
-
-I’m that cliche “ordinary girl on an extraordinary journey” if one is allowed to say her own life is extraordinary at 33. Basically, I travel a lot. Usually alone too, that way I don’t have to compromise.
-
-A friend once described me as cynical but kind in equal measure, a disturbingly accurate bio. If you’re a fan of chaos, brutal honesty, sarcasm, and girls who think they are wittier than they actually are, then you’ve come to the place. No, no don’t run away just yet.
+                    Hey there! Nice to meet you! I'm Shafiq, and welcome to my blog,
+                     Young Wanderer. Here, I share stories and adventures from my travels, 
+                     along with some thoughts about life. I'm just a regular guy in his 30s
+                      who loves to travel a lot, usually on my own so I can do what I want.
+                       Some say I'm both cynical and kind, which is probably true. If you like chaos,
+                        honesty, sarcasm, and thinking you're funnier than you really are, then stick 
+                        around! Don't leave just yet
                     </h4>
                    <img src={meet2} width="100%" height="100%"/>
                    <h4>
-                    Hello! You’ve found me, and I’m so glad you’re here; it’s meant to be!
+                   Hey there! Great to see you here; it feels like destiny!
 
-So I’m Liz Carlson and welcome to my blog, Young Adventuress; a no-filter, vaguely chronological space filled with stories and misadventures about my travels over the years with some musings about life thrown in for good measure.
+I’m Shafiq, and welcome to my blog, Young Wanderer. Here, you'll find a laid-back space where I share stories and mishaps from my travels over the years, along with some thoughts on life.
 
-I’m that cliche “ordinary girl on an extraordinary journey” if one is allowed to say her own life is extraordinary at 33. Basically, I travel a lot. Usually alone too, that way I don’t have to compromise.
+I’m just your average guy on an adventure, though at 33, it might be a stretch to call my life extraordinary. But hey, I love to travel, and I do it a lot. I usually go solo because it means I don't have to compromise.
 
-A friend once described me as cynical but kind in equal measure, a disturbingly accurate bio. If you’re a fan of chaos, brutal honesty, sarcasm, and girls who think they are wittier than they actually are, then you’ve come to the place. No, no don’t run away just yet.
+A friend once called me cynical yet kind, which is surprisingly accurate. So if you’re into chaos, honesty, sarcasm, and people who think they're funnier than they are, then you're in the right place. Don’t go running off just yet!
+
                     </h4>
                    <img src={meet} width="100%" height="100%"/>
                 </div>

@@ -2,6 +2,7 @@ import Header from '../../Components/Header/Header.js';
 import img1 from '../../Assets/1.png';
 import img2 from '../../Assets/2.png';
 import img3 from '../../Assets/3.png';
+import frontscreen from '../../Assets/front.jpg';
 
 import './Home.css';
 
@@ -32,13 +33,13 @@ function Home()
      },[]);
     return (
         <div>
-            <Header/>
+            <Header background={frontscreen}/>
                 <h1 className='wallheading'>Hi, I' m Shafi</h1>
             <h2 className='wallsubheading'>A normal boy living her biggest, messiest dreams.</h2>
             <button className='gettoknow'>
                 Excited to Know Me
             </button>
-            <div className='LeafContainer'>
+            <div className='LeafContainer' style={{marginTop:"-300px"}}>
                 <LeafWithText text="My recent adventures"/>
                 <ThreeImageGallery image1={img1} image2={img2} image3={img3} link1={"/Tour1"} link2={"/Tour2"} link3={"/Tour3"}/> 
                 <LeafWithText text="My favorite stories"/>
